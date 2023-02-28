@@ -1,0 +1,32 @@
+/*!
+ Docsyard by LivelyWorks - http://livelyworks.net
+ version: 1.x
+ --------------------------------------------------------------------- 
+ Build Timestamp: 1632901508
+ Build Date: Wed Sep 29 2021 13:15:08 GMT+0530 (India Standard Time)
+--------------------------------------------------------------------- */
+/*
+ *
+ * Main stylesheet for Switchery.
+ * http://abpetkov.github.io/switchery/
+ *
+ */
+.switchery {
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  position: relative;
+  vertical-align: middle;
+  width: 50px; }
+
+.switchery > small {
+  background: #fff;
+  border-radius: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  height: 30px;
+  position: absolute;
+  top: 0;
+  width: 30px; }

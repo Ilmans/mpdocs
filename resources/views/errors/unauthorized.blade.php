@@ -1,0 +1,1 @@
+<h1><?= __tr('Unauthorized User') ?></h1> 

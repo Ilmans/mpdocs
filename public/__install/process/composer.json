@@ -1,0 +1,14 @@
+{
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "LivelyWorks\\": "livelyworks/"
+        },
+        "classmap": [
+        ],
+        "files": [
+            "support/helpers.php"
+        ]
+    }
+}
