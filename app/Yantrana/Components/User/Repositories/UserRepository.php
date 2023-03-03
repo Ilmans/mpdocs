@@ -532,7 +532,7 @@ class UserRepository extends BaseRepository implements UserRepositoryBlueprint
     {
         $keyValues = [
             'email'             => __ifisset($inputData['email']) ? strtolower($inputData['email']) : null,
-            'password'          => bcrypt($inputData['password']),
+            'password'          => $inputData['password'],
             'status'            => 1,
             'first_name',
             'last_name',

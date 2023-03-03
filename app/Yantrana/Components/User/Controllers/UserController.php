@@ -493,6 +493,10 @@ class UserController extends BaseController
     {   
         return $this->loadPublicView('user.contact-us');
     }
+    public function login()
+    {   
+        return $this->loadPublicView('user.login');
+    }
 
     /**
       * User contact us form 

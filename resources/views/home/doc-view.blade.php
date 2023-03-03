@@ -281,7 +281,7 @@
 
                         <hr class="mb-4">
                     </div>
-                    @if (!__isEmpty($articleContents) and array_get($articleContents, $firstKey . '.article_type') == 2)
+                    @if (!__isEmpty($articleContents) and array_get($articleContents, $firstKey . '.article_type') == 2 and !Auth::user())
                         <div class="alert alert-warning" role="alert">
                             Sorry, this article is not available for public. Please login using your credentials to
                             view.

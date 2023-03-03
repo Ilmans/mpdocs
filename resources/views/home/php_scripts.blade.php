@@ -40,6 +40,7 @@
 	//Note : Level has been replaced with depth
     function buildArticleContent($items, $language, $level = 0)
     {
+        
         // Open unordered list
         $pageNevMarkup = '';
 
@@ -50,10 +51,12 @@
             $contentLang = array_get($page, 'slug');
             $contentDescription = array_get($page, 'description');
             
+          
             // Check if current page is parent
             if ($page['languages__id'] == $language) {
 
                 if ($page['isParent']) {
+                 
                     $pageNevMarkup .= "<h3 class='lw-document-heading mb-3' id='$contentLang'>$contentTitle</h3>";
                     $pageNevMarkup .= "<div class='lw-article-description mb-4'>$contentDescription</div>";
                 } else {

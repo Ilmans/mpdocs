@@ -1049,6 +1049,7 @@ Route::group(
           Start User Components Public Section Related Routes
           ----------------------------------------------------------------------- */
 
+            Route::get('login', [UserController::class,'login'])->name('login');
             Route::group(
                 [
                     'namespace' => 'User\Controllers',
@@ -1056,6 +1057,8 @@ Route::group(
                 ],
                 function () {
                     // login process
+
+                  
                     Route::post('/process-login', [
                         'as' => 'user.login.process',
                         'uses' => 'UserController@loginProcess',
@@ -1084,6 +1087,8 @@ Route::group(
                         'as' => 'user.reset_password.process',
                         'uses' => 'UserController@restPasswordProcess',
                     ]);
+
+                  
                 }
             );
 
