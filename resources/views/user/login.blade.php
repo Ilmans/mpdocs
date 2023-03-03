@@ -26,12 +26,13 @@
                 <i class="fa fa-exclamation-circle" aria-hidden="true"></i>&nbsp;<span
                     ng-bind="loginCtrl.errorMessage"></span>
             </div>
+        
         </div>
         
         <!--  form action  -->
         <form class="lw-form lw-ng-form form-horizontal omb_login" name="loginCtrl.[[ loginCtrl.ngFormName ]]"
             ng-submit="loginCtrl.submit()" novalidate>
-
+            <div class="alert bg-info text-white">Your activity login and read is saved in our system, If your account is detected sharing access to other people, we will disable it.</div>
             <div class="lw-form-body">
 
                 <!--  Email  -->
