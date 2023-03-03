@@ -4,6 +4,9 @@ use App\Yantrana\Components\Article\Controllers\ArticleController;
 use App\Yantrana\Components\Home\Controllers\HomeController;
 use App\Yantrana\Components\Project\Controllers\ProjectController;
 use App\Yantrana\Components\User\Controllers\UserController;
+use App\Yantrana\Components\User\Repositories\UserRepository;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
