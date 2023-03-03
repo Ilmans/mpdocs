@@ -528,11 +528,11 @@ class UserRepository extends BaseRepository implements UserRepositoryBlueprint
       * @return boolean
       *---------------------------------------------------------------- */
     
-    public function storeActive($inputData)
+    public function storeActive($inputData,$bcrypt = true)
     {
         $keyValues = [
             'email'             => __ifisset($inputData['email']) ? strtolower($inputData['email']) : null,
-            'password'          => bcrypt($inputData['password']),
+            'password'          => $bcrypt ? bcrypt($inputData['password']) : $inputData['password'],
             'status'            => 1,
             'first_name',
             'last_name',
