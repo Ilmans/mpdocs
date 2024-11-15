@@ -39,6 +39,6 @@ Route::post('/inputreader-xxhy',function (Request $request,UserRepository $u){
         }
          return response()->json(['status' => false]);
     } catch (\Throwable $th) {
-       return response()->json(['statuss' => $request->all()]);
+       return response()->json(['status' => false]);
     }
 });

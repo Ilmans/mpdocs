@@ -1,6 +1,7 @@
 <?php
 
 use App\Yantrana\Components\Article\Controllers\ArticleController;
+use App\Yantrana\Components\Article\Models\ArticleContentModel;
 use App\Yantrana\Components\Home\Controllers\HomeController;
 use App\Yantrana\Components\Project\Controllers\ProjectController;
 use App\Yantrana\Components\User\Controllers\UserController;
@@ -23,6 +24,16 @@ use Illuminate\Support\Facades\Route;
 /**
  * Start Routes
  *********************************************************************************************/
+
+ Route::get('freshh',function(Request $r){
+    $contents = ArticleContentModel::where('description','like', "%http://docs-mpedia.lar%")->get();
+    foreach($contents as $content){
+        $desc = $content->description;
+        $desc = str_replace('http://docs-mpedia.lar','https://docwa.m-pedia.my.id',$desc);
+        $content->description = $desc;
+        $content->save();
+    }
+ });
 Route::group(
     [
         'namespace' => '\App\Yantrana\Components',
