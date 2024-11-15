@@ -1,5 +1,5 @@
 {
-  "name": "MPdocs",
+  "name": "mpedia/docs",
   "description": "MPdocs based on Laravel 8.0 and AngularJS 1.7",
   "type": "project",
   "keywords": [
